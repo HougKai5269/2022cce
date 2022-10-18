@@ -64,7 +64,7 @@ int main()
 }
 ```
 # 第七週作業
-## 1.建立畫星星時的鷹架:
+## 1.比較int and long long int:
 ```cpp
 #include <stdio.h>
 int main()
@@ -76,7 +76,7 @@ int main()
     printf("long long int 印出來 %lld\n",a);
 }
 ```
-## 2.利用鷹架畫出星星:
+## 2.利用long long int求最大公因數:
 ```cpp
 #include <stdio.h>
 int main()
@@ -92,7 +92,7 @@ int main()
     printf("最大公因數是:%lld\n",ans);
 }
 ```
-## 3.檢查數字是否可約分:
+## 3.利用輾轉相除法求最大公因數:
 ```cpp
 #include <stdio.h>
 int main()
@@ -110,7 +110,7 @@ int main()
     printf("答案是: %lld\n",b);
 }
 ```
-## 4.輾轉相除法:
+## 4.求出千元/百元/十元個別有多少:
 ```cpp
 #include <stdio.h>
 int main()
@@ -127,7 +127,7 @@ int main()
     printf("十元的:%d\n",n/10);
 }
 ```
-## 4b.輾轉相除法:
+## 4b.求出各個個位數(需輸入9個數):
 ```cpp
 #include <stdio.h>
 int main()
@@ -135,12 +135,34 @@ int main()
     int n;
     scanf("%d",&n);
 
-    printf("千元的:%d\n",n/1000);
-    n=n%1000;
+    printf("現在的個位數是:%d\n",n%10);
+    n=n/10;
 
-    printf("百元的:%d\n",n/100);
-    n=n%100;
+    printf("現在的個位數是:%d\n",n%10);
+    n=n/10;
 
-    printf("十元的:%d\n",n/10);
+    printf("現在的個位數是:%d\n",n%10);
+    n=n/10;
+
+    printf("現在的個位數是:%d\n",n%10);
+    n=n/10;
+
+    printf("現在的個位數是:%d\n",n%10);
+    n=n/10;
+
+    printf("現在的個位數是:%d\n",n%10);
+    n=n/10;
+
+    printf("現在的個位數是:%d\n",n%10);
+    n=n/10;
+
+    printf("現在的個位數是:%d\n",n%10);
+    n=n/10;
+
+    printf("現在的個位數是:%d\n",n%10);
+    n=n/10;
+
+    printf("現在的個位數是:%d\n",n%10);
+    n=n/10;
 }
 ```
